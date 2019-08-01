@@ -222,7 +222,6 @@ Docker version 18.09.7, build 2d0083d
 > 至此我们已经完成了所有配置阶段，下面我来提交一次代码，测试发布流程
 
 - github 提交代码
-
 <img src="https://img.zhaoblogs.com/img/20190801140442.png" alt="github commit code">
 - 进入Azure查看Build构建进度，我这构建很快，我进去的时候已经构建Build完了
 <img src="https://img.zhaoblogs.com/img/20190801140651.png" alt="Azure build">
