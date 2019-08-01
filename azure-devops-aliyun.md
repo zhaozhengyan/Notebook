@@ -179,6 +179,7 @@ $(pwd) | 这个pwd 可以直接写，但是出于安全考虑，配置到azure�
     #从阿里云拉取刚刚push的镜像
     docker pull registry.cn-hangzhou.aliyuncs.com/zohnz/webnotebook
     ```
+
 4. Run Image
 
     ```shell
