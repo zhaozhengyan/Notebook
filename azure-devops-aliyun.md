@@ -111,6 +111,7 @@ steps:
 ```
 
 这里简要解释下 yaml 的脚本参数的大致意思
+
 指令 | 注释说明
 ---|---
 $(xxx) | 这个是azure 的占位符，上面我用variables 声明了
@@ -118,7 +119,8 @@ $(xxx) | 这个是azure 的占位符，上面我用variables 声明了
 -t | 镜像的名字及标签，通常 name:tag 或者 name 格式；可以在一次构建中为一个镜像设置多个标签。
 $(pwd) | 这个pwd 可以直接写，但是出于安全考虑，配置到azure的variables(参数环境变量里面)了
 
-读者可以通过如下方式设置
+> 读者可以通过如下方式设置
+
 <img src="https://github.com/zhaozhengyan/Notebook/raw/master/img/20190731175832.png" alt="设置pwd参数">
 
 - 接下来添加一个新的 ```Release```,主要功能是Pull镜像和Run镜像
