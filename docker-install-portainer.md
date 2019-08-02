@@ -22,6 +22,17 @@ docker volume create portainer_data
 
 ```shell
 systemctl enable docker.service
+启动        systemctl start docker
+守护进程重启   sudo systemctl daemon-reload
+重启docker服务   systemctl restart  docker
+重启docker服务  sudo service docker restart
+关闭docker   service docker stop   
+关闭docker  systemctl stop docker
+--------------------- 
+作者：EasternUnbeaten 
+来源：CSDN 
+原文：https://blog.csdn.net/EasternUnbeaten/article/details/80463837 
+版权声明：本文为博主原创文章，转载请附上博文链接！
 ```
 
 ---
