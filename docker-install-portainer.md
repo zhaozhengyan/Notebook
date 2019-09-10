@@ -18,11 +18,11 @@ docker volume create portainer_data
  docker run -d -p 9000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer
 ```
 
-- 设置docker service 开机自启动
+- 其他指令
 
 说明|指令
 ---|---
-启动服务 |systemctl enable docker.service
+设置服务自启动 |systemctl enable docker.service
 启动     |   systemctl start docker
 守护进程重启 |  sudo systemctl daemon-reload
 重启docker服务 |  systemctl restart  docker
