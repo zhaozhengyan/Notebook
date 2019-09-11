@@ -26,7 +26,7 @@ docker volume create portainer_data
 启动     |   systemctl start docker
 守护进程重启 |  sudo systemctl daemon-reload
 重启docker |  systemctl restart  docker
-开启docker服务 | sudo service docker restart
+开启docker服务 | sudo service docker start
 重启docker服务 | sudo service docker restart
 关闭docker |  service docker stop
 关闭docker | systemctl stop docker
