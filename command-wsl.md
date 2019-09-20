@@ -2,7 +2,7 @@
 ---|---
 ```wsl --shutdown``` | 关闭WSL  
 ```su root``` | root 账户登录
-```netstat -aon|findstr "49157"``` | 查找使用指定端口
+```netstat -aon```|findstr ```"49157"``` | 查找使用指定端口
 
 
 
