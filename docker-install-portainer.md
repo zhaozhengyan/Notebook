@@ -22,23 +22,24 @@ docker volume create portainer_data
 
 说明|指令
 ---|---
-设置服务自启动 |systemctl enable docker.service
-启动     |   systemctl start docker
-守护进程重启 |  sudo systemctl daemon-reload
-重启docker |  systemctl restart  docker
-开启docker服务 | sudo service docker start
-重启docker服务 | sudo service docker restart
-关闭docker |  service docker stop
-关闭docker | systemctl stop docker
+设置服务自启动 |```systemctl enable docker.service```
+启动     | ```systemctl start docker```
+守护进程重启 | ```sudo systemctl daemon-reload```
+重启docker |```systemctl restart  docker```
+开启docker服务 | ```sudo service docker start```
+重启docker服务 |```sudo service docker restart```
+关闭docker |```  service docker stop```
+关闭docker | ```systemctl stop docker```
 ---
 
 - docker 容器
 
 说明|指令
 ---|---
-查看当前运行的容器 |docker ps
-查看所有容器，包括停止的    |   docker ps -a
-启动容器|docker start 43e3fef2266c
+查看当前运行的容器 |```docker ps```
+查看所有容器，包括停止的    |   ```docker ps -a```
+启动容器|```docker start 43e3fef2266c```
+进入容器|```docker exec -it 43e3fef2266c```
 ---
 
 - 安装MSSQL
