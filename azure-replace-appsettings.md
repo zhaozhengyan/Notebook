@@ -1,4 +1,4 @@
-## Azure DevOps 替换 appsettings 解决方案
+## .Net Core DevOps - 替换 ConnectionStrings
 
 > 之前发布了 [《.Net Core DevOps -免费用Azure四步实现自动化发布（CI/CD）》](https://www.cnblogs.com/zhaozhengyan/p/azure-devops-aliyun.html/)之后，有很多朋友私信我说如何替换 appsettings 里面的 ```ConnectionStrings```的问题。我的解决方案是通过Shell在编译前替换需要替换的字符串。以下是具体步骤：
 
@@ -6,12 +6,12 @@
 
     添加占位符例如```{Writable}```,用于Shell脚本替换用
 
-![](https://github.com/zhaozhengyan/Notebook/raw/master/img/20191030150630.png)
+![](https://r.zhaoblogs.com/20191030150630.png)
 
 
 #### 2. 打开解决方案的 ```azure-pipelines.yml``` 添加一个新的Task
 
-![](https://github.com/zhaozhengyan/Notebook/raw/master/img/20191030151305.png)
+![](https://r.zhaoblogs.com/20191030151305.png)
 
 
 > 注：`ls` 列出目录（主要是看azure 的 devops 的目录结构，可以不写）
@@ -26,14 +26,14 @@ sed -i 's/{Writable}/$(Writable)/g' WebNotebook/appsettings.Production.json
 #### 3.将yml的`$(Writable)` 配置到Azure的 `Variables` 里面
 
 
-![](https://github.com/zhaozhengyan/Notebook/raw/master/img/webnotebook.gif)
+![](https://r.zhaoblogs.com/webnotebook.gif)
 
 
 #### 4.提交代码，查看是否替换成功
 
     检查Job执行情况
 
-![](https://github.com/zhaozhengyan/Notebook/raw/master/img/20191030154117.png)
+![](https://r.zhaoblogs.com/20191030154117.png)
 
     进入docker查看appsettings,替换成功
 
