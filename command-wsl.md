@@ -3,7 +3,7 @@
  指令 | 注释说明 
 ---|---
 `su root` | root 账户登录
-`netstat -aon findstr "80"` | linux查找使用指定端口
+`netstat -aon findstr "80" ` | linux查找使用指定端口
 
 
 > windows 常用命令
@@ -11,8 +11,8 @@
  指令 | 注释说明 
 ---|---
 `wsl --shutdown` | 关闭WSL  
-`netsh http show servicestate`| 查看Http服务端口占用
-`netstat -ano|findstr "80"` | cmd 查看置顶端口
+`netsh http show servicestate `| 查看Http服务端口占用
+`netstat -ano|findstr "80" ` | cmd 查看置顶端口
 `netsh http show servicestate` | 查看http端口使用状态
 > nginx 常用命令
 
