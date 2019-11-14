@@ -19,9 +19,11 @@
 指令 | 注释说明 
 ---|---
 `nginx -s start ` | 启动
-`nginx -s reload ` | 停止
-`nginx -s restart ` | 重新启动
+`nginx -t ` | 测试配置文件是否有语法错误
+`nginx -s reopen ` | 重启Nginx
 `nginx -s reload ` | 重新加载配置
+`nginx -s stop `   |强制停止Nginx服务
+`nginx -s quit ` |处理完所有请求后再停止服务
 `service nginx start` | 启用nginx
 `service nginx stop` | 停止
 `service nginx restart` | 重新启动
