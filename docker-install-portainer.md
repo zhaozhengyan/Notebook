@@ -28,8 +28,10 @@ docker volume create portainer_data
 重启docker |```systemctl restart  docker```
 开启docker服务 | ```sudo service docker start```
 重启docker服务 |```sudo service docker restart```
-关闭docker |```  service docker stop```
+关闭docker |```service docker stop```
 关闭docker | ```systemctl stop docker```
+列出镜像|```docker images```
+删除镜像|```docker image rm ff4ee4caaa23```
 ---
 
 - docker 容器
@@ -39,7 +41,7 @@ docker volume create portainer_data
 查看当前运行的容器 |```docker ps```
 查看所有容器，包括停止的    |   ```docker ps -a```
 启动容器|```docker start 43e3fef2266c```
-进入容器|```docker exec -it 43e3fef2266c```
+进入容器|```docker exec -it 43e3fef2266c /bin/bash```
 ---
 
 - 安装MSSQL
