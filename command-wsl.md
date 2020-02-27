@@ -1,3 +1,9 @@
+  > ubuntu常用命令
+
+指令 | 注释说明 
+---|---
+`pip3 install opencv-python -i https://pypi.douban.com/simple/` | python install 依赖
+ 
  > wsl常用命令
  
  指令 | 注释说明 
