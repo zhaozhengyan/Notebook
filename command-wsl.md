@@ -4,6 +4,7 @@
 ---|---
 `pip3 install opencv-python -i https://pypi.douban.com/simple/` | python install 依赖
 `killall python3`| kill python 进程
+`python3 -m flask run` | run flask
 
  
  > wsl常用命令
