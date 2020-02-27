@@ -7,6 +7,7 @@
 `killall python3`| kill python 进程
 `export FLASK_APP=app`|  load flask
 `python3 -m flask run` | run flask
+`hash -d pip`| fix pip install error
 
  
  > wsl常用命令
