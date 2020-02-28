@@ -2,6 +2,7 @@
 
 指令 | 注释说明 
 ---|---
+`ssh root@47.98.193.96` | login ssh
 `pip3 install opencv-python -i https://pypi.douban.com/simple/` | python install 依赖
 `pip3 install -r requirements.txt -i https://pypi.douban.com/simple/`| 一键安装所有依赖
 `killall python3`| kill python 进程
