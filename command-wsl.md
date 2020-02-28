@@ -8,6 +8,8 @@
 `export FLASK_APP=app`|  load flask
 `python3 -m flask run` | run flask
 `hash -d pip`| fix pip install error
+`pip3 install flask uwsgi -i https://pypi.douban.com/simple/` | install uwsgi
+`uwsgi --socket 0.0.0.0:5000 --protocol=http -p 3 -w app:app` | lanuch flask in uwsgi
 
  
  > wsl常用命令
