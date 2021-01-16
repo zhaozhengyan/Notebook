@@ -19,6 +19,8 @@
 `ls -lrt`| 按升序，即最近的修改
 `cp -rf 源目录 备份目录` | cp是复制命令 -r 递归处理，指定目录下的文件和子目录一并处理 -f 强行复制，无论目标是否存在
 `rm -rf ./code/*` | 删除code下所有的文件
+`sudo tar zcvf sg_cxist_ready_v1.0.8.tar.gz sg_cxist_ready_v1.0.8`|压缩 tar zcvf 文件名.tar.gz 待压缩的文件名
+`tar zxvf sg_cxist_ready_v1.0.8.tar.gz`|解压 tar zxvf 文件名.tar.gz
 
 > wsl常用命令
 
